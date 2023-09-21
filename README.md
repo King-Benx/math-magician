@@ -20,6 +20,7 @@
   - [🔭 Future Features](#-future-features-)
   - [🤝 Contributing](#-contributing-)
   - [⭐️ Show your support](#️-show-your-support-)
+  - [Acknowledgement](#-acknowledgement) 
   - [📝 License](#-license-)
 
 # 📖 Math magicians<a name="about-project"></a>
@@ -71,8 +72,8 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-desired-folder
-  git clone git@github.com:King-Benx/math-magicians.git
-  open the repo folder `math-magicians`
+  git clone git@github.com:King-Benx/math-magician.git
+  open the repo folder `math-magician`
 ```
 
 ### Install
@@ -151,7 +152,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/King-Benx/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/King-Benx/math-magician/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,8 +162,12 @@ If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Acknowledgement <a name="acknowledgement"></a>
+
+I would like to thank Microverse for all help rendered
+
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](../math-magicians/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
