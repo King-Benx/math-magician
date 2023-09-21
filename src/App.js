@@ -1,9 +1,5 @@
-function App() {
-  return (
-    <div className="App">
-      <h1>Math Magicians</h1>
-    </div>
-  );
-}
+import { Calculator } from './components/Calculator';
 
-export default App;
+export default function App() {
+  return <Calculator />;
+}
