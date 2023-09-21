@@ -1,18 +1,33 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 import { BUTTON_VALUES, OPERATOR_VALUES } from '../constants';
 
-export const Calculator = () => (
-  <div className="calculator">
-    <div className="screen">
-      <Displaybar value={String(0)} />
+export const Calculator = () => {
+  const [state, setState] = useState({});
+  const handleClick = (e) => {
+    const result = calculate({ ...state }, e.target.name);
+    setState((prev) => ({ ...prev, ...result }));
+  };
+  const { total, operation, next } = state;
+  return (
+    <div className="calculator">
+      <div className="screen">
+        <small>
+          {total}
+          {operation}
+          {next}
+        </small>
+        <Displaybar value={String(total || 0)} />
+      </div>
+      <div className="touch-pad">
+        {BUTTON_VALUES.map((button) => (
+          <Button key={button} text={button} handleClick={handleClick} />
+        ))}
+      </div>
     </div>
-    <div className="touch-pad">
-      {BUTTON_VALUES.map((button) => (
-        <Button key={button} text={button} />
-      ))}
-    </div>
-  </div>
-);
+  );
+};
 
 export const Displaybar = ({ value }) => (
   <div id="display" className="display">
@@ -23,14 +38,20 @@ Displaybar.propTypes = {
   value: PropTypes.string.isRequired,
 };
 
-export const Button = ({ text }) => {
+export const Button = ({ text, handleClick }) => {
   const className = OPERATOR_VALUES.includes(text) ? 'operator' : '';
   return (
-    <button type="button" className={className}>
+    <button
+      type="button"
+      name={text}
+      onClick={handleClick}
+      className={className}
+    >
       {text}
     </button>
   );
 };
 Button.propTypes = {
   text: PropTypes.string.isRequired,
+  handleClick: PropTypes.string.isRequired,
 };
