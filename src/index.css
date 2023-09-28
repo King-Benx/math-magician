@@ -1,6 +1,27 @@
-.calculator {
-  max-width: 400px;
+body {
+  margin: 0;
+  font-weight: bold;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+}
+
+.container-width {
+  padding: 0 120px;
   margin: 0 auto;
+}
+
+.calc-intro {
+  width: 600px;
+  text-align: center;
+}
+
+.calculator {
+  width: 400px;
 }
 
 .screen {
@@ -10,7 +31,7 @@
 
 .display {
   width: 100%;
-  height: 50px;
+  height: 100px;
   color: #fff;
   display: flex;
   font-size: 30px;
@@ -20,11 +41,60 @@
 
 .touch-pad {
   display: grid;
-  grid-auto-rows: 80px;
+  grid-auto-rows: 90px;
   background-color: #bedbe5;
   grid-template-columns: repeat(4, 1fr);
   border-bottom: 1px solid #767c85;
   border-right: 1px solid #767c85;
+}
+
+.wrapper {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .quote {
+  max-width: 600px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.wrapper .quote span.error {
+  color: red;
+  letter-spacing: 1px;
+}
+
+.nav-bar {
+  display: block;
+  width: 100%;
+  color: white;
+  background: rgb(128, 109, 0);
+}
+
+.nav-bar .nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav .links {
+  margin-left: auto;
+}
+
+.nav-bar .nav .links a {
+  color: white;
+  padding: 0 12px;
+  text-decoration: none;
+}
+
+.nav-bar .nav .links a.active {
+  color: #64f7ff;
+}
+
+.home p {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 button {
