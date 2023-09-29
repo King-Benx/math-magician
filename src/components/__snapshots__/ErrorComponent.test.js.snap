@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The error component renders correctly 1`] = `
+<span
+  class="error"
+>
+  Something went wrong and we failed to get the quote
+</span>
+`;
+
+exports[`the error component renders fully 1`] = `
+<div
+  className="quote"
+>
+  <span
+    className="error"
+  >
+    Something went wrong and we failed to get the quote
+  </span>
+</div>
+`;
