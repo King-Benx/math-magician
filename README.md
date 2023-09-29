@@ -140,6 +140,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - GitHub: [King-Benx](https://github.com/King-Benx)
 
+👤 **Naol Kidanu**
+
+- GitHub: [naolkidanu](https://github.com/naolkidanu)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
